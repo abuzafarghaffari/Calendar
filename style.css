@@ -1,0 +1,67 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 30rem;
+  height: 25rem;
+  border: 1px solid red;
+}
+
+.grid-day {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.grid-day h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid-day h1 span {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+.grid-day div {
+  background-color: #c7c4c4;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  gap: 1ch;
+}
+
+.grid-day-heading {
+  grid-area: 1/1/1/8;
+  text-align: center;
+}
+
+.grid-date {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.grid-date div {
+  -webkit-box-shadow: 1px 1px #c7c4c4;
+          box-shadow: 1px 1px #c7c4c4;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  gap: 1ch;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+$container-lenght:30rem;
+$container-height:25rem;
+$box-height:50px;
+
+@mixin ceter{
+    display: grid;
+    place-content: center;
+    gap: 1ch;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}   
+.container{
+    width:$container-lenght;
+    height: $container-height;
+    border: 1px solid red;
+}
+
+.grid-day{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+gap:2px;
+h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0 10px 0 10px;
+    }
+}
+    div{
+        
+        background-color: rgba(199,196,196,1);
+        height: $box-height;
+        @include ceter();
+    }
+}
+
+.grid-day-heading{
+    grid-area: 1/1 /1/8;
+    text-align: center;
+}
+
+.grid-date{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:2px;
+    
+    div{
+        box-shadow: 1px 1px rgba(199,196,196,1);
+        height: $box-height;
+       @include ceter();
+        //text-align: center;
+       
+       
+    }
+}
