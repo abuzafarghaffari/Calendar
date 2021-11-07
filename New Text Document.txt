@@ -1,3 +1,4 @@
 https://dev.to/harshitanahta/calendar-using-vanilla-js-2g5m
 
 
+https://medium.com/@nitinpatel_20236/challenge-of-building-a-calendar-with-pure-javascript-a86f1303267d
